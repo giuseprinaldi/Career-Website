@@ -41,7 +41,11 @@ export const projects: Project[] = [
     architecture:
       "A monorepo: a FastAPI backend (SQLAlchemy + PostgreSQL, JWT auth) and a Next.js 16 / React 19 / TypeScript front end. The scheduler assembles a structured context of shifts, roles, and availability and asks an LLM (DeepSeek) for assignments — then deterministically validates every one server-side (role, availability, time-off, no double-booking) before saving. The AI only drafts; the validator decides what actually ships.",
     tags: ["Next.js 16", "FastAPI", "PostgreSQL", "JWT", "DeepSeek", "TypeScript", "Docker"],
-    image: "/screenshots/mise.png",
+    images: [
+      { src: "/screenshots/mise-overview.png", label: "Overview" },
+      { src: "/screenshots/mise-templates.png", label: "Shift Templates" },
+      { src: "/screenshots/mise.png", label: "Landing" },
+    ],
     liveUrl: "https://mise-frontend-eight.vercel.app",
   },
   {
