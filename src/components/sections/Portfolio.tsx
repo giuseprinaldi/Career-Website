@@ -88,7 +88,7 @@ export default function Portfolio() {
             fontWeight: "600",
           }}
         >
-          // 05. PORTFOLIO
+          // 02. SELECTED WORK
         </span>
         <h2 style={{ fontSize: "2.5rem", color: "#fff", marginTop: "8px" }}>Things I&apos;ve Built</h2>
         <p style={{ color: "var(--fg-subtle)", marginTop: "10px", fontSize: "1rem", maxWidth: "640px", margin: "10px auto 0" }}>

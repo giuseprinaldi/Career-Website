@@ -25,7 +25,7 @@ export default function Contact() {
               fontWeight: "600",
             }}
           >
-            // 06. CONTACT
+            // 05. CONTACT
           </span>
           <h2 style={{ fontSize: "2.5rem", color: "#fff", marginTop: "8px", marginBottom: "20px" }}>
             Let&apos;s Talk Delivery

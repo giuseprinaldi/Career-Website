@@ -39,7 +39,7 @@ export const projects: Project[] = [
     problem:
       "Building restaurant rosters by hand is slow and error-prone — juggling who's qualified, who's available, approved time off, overtime, and coverage. Mise drafts a compliant schedule from those constraints in seconds and lets managers adjust and publish to staff.",
     architecture:
-      "A monorepo: a FastAPI backend (SQLAlchemy + PostgreSQL, JWT auth) and a Next.js 16 / React 19 / TypeScript front end. The scheduler assembles a structured context of shifts, roles, and availability and asks an LLM (DeepSeek) for assignments — then deterministically validates every one server-side (role, availability, time-off, no double-booking) before saving. The model proposes; the code enforces the hard constraints.",
+      "A monorepo: a FastAPI backend (SQLAlchemy + PostgreSQL, JWT auth) and a Next.js 16 / React 19 / TypeScript front end. The scheduler assembles a structured context of shifts, roles, and availability and asks an LLM (DeepSeek) for assignments — then deterministically validates every one server-side (role, availability, time-off, no double-booking) before saving. The AI only drafts; the validator decides what actually ships.",
     tags: ["Next.js 16", "FastAPI", "PostgreSQL", "JWT", "DeepSeek", "TypeScript", "Docker"],
     image: "/screenshots/mise.png",
     liveUrl: "https://mise-frontend-eight.vercel.app",

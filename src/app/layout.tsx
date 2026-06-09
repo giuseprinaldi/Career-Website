@@ -22,7 +22,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Joe Rinaldi | Scrum Master & Agile Delivery",
+  title: "Joe Rinaldi | Operations → Agile Delivery",
   description:
     "Joe Rinaldi — operations and team leader transitioning into Agile delivery. A decade of servant leadership, facilitation, impediment removal, and metrics-driven continuous improvement, now applied to a Scrum Master role and SAFe® SSM certification.",
   keywords: [
@@ -87,14 +87,14 @@ export default function RootLayout({
               <a href="#about" style={{ fontSize: "0.9rem", color: "var(--fg-muted)", fontWeight: "500" }}>
                 About
               </a>
+              <a href="#portfolio" style={{ fontSize: "0.9rem", color: "var(--fg-muted)", fontWeight: "500" }}>
+                Work
+              </a>
               <a href="#rolefit" style={{ fontSize: "0.9rem", color: "var(--fg-muted)", fontWeight: "500" }}>
                 Role Fit
               </a>
               <a href="#journey" style={{ fontSize: "0.9rem", color: "var(--fg-muted)", fontWeight: "500" }}>
                 Journey
-              </a>
-              <a href="#skills" style={{ fontSize: "0.9rem", color: "var(--fg-muted)", fontWeight: "500" }}>
-                Skills
               </a>
               <a
                 href="#contact"

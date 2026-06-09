@@ -1,4 +1,13 @@
 import { CheckCircle } from "lucide-react";
+import { competencies } from "@/data/competencies";
+
+const eyebrow: React.CSSProperties = {
+  fontFamily: "var(--font-mono)",
+  color: "var(--accent-cyan)",
+  fontSize: "0.85rem",
+  letterSpacing: "0.15em",
+  fontWeight: 600,
+};
 
 export default function About() {
   return (
@@ -12,19 +21,9 @@ export default function About() {
         }}
       >
         <div>
-          <span
-            style={{
-              fontFamily: "var(--font-mono)",
-              color: "var(--accent-cyan)",
-              fontSize: "0.85rem",
-              letterSpacing: "0.15em",
-              fontWeight: "600",
-            }}
-          >
-            // 01. THE TRANSITION
-          </span>
+          <span style={eyebrow}>// 01. THE TRANSITION</span>
           <h2 style={{ fontSize: "2.2rem", color: "#fff", marginTop: "8px", marginBottom: "20px" }}>
-            Already Doing the Work — Now Formalizing It
+            The Same Job, Different Vocabulary
           </h2>
           <p style={{ marginBottom: "20px", fontSize: "1.05rem" }}>
             For a decade I&apos;ve led as a servant-leader under other titles — authoring
@@ -61,6 +60,29 @@ export default function About() {
               documented Definition of Done so &ldquo;done&rdquo; actually means done.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Compact toolkit strip (collapsed from the old standalone Capabilities section). */}
+      <div style={{ marginTop: "48px" }}>
+        <span style={eyebrow}>// TOOLKIT</span>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "14px" }}>
+          {competencies.map((c, i) => (
+            <span
+              key={i}
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.8rem",
+                color: "var(--fg-muted)",
+                background: "rgba(255,255,255,0.03)",
+                border: "1px solid var(--border-subtle)",
+                borderRadius: "6px",
+                padding: "6px 12px",
+              }}
+            >
+              {c.category}
+            </span>
+          ))}
         </div>
       </div>
     </section>

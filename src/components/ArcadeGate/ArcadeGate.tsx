@@ -182,8 +182,15 @@ export default function ArcadeGate({ onEnter }: { onEnter: () => void }) {
             ENTER THE CORE
           </h1>
           <p style={{ fontSize: "0.85rem", color: "var(--fg-subtle)", fontFamily: "var(--font-mono)", marginTop: "4px" }}>
-            INSERT TOKEN OR PRESS SPACE TO ENTER
+            INSERT THE COIN — OR JUST TAP ENTER
           </p>
+          <button
+            onClick={completeInsert}
+            className="edgy-btn edgy-btn-primary"
+            style={{ marginTop: "16px", fontSize: "0.9rem", padding: "12px 26px" }}
+          >
+            Enter site →
+          </button>
         </div>
 
         {/* ARCADE CABINET */}
