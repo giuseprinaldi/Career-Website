@@ -4,8 +4,6 @@ export const SITE = {
   name: "Joe Rinaldi",
   fullName: "Joseph Rinaldi",
   email: "giusep.rinaldi@gmail.com",
-  phone: "+1 978.761.9380",
-  phoneHref: "tel:+19787619380",
   linkedin: "https://www.linkedin.com/in/joseph-rinaldi-integrator",
   linkedinHandle: "joseph-rinaldi-integrator",
 };

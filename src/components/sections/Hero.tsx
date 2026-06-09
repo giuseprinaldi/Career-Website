@@ -41,7 +41,7 @@ export default function Hero() {
             fontFamily: "var(--font-heading)",
           }}
         >
-          Joe Rinaldi — Operations Leader → Servant-Leader Scrum Master
+          Joe Rinaldi — Operations Leader bringing a decade of team leadership to Agile delivery
         </h2>
 
         <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "var(--fg-muted)" }}>

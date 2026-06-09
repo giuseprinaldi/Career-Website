@@ -11,9 +11,9 @@ export interface Competency {
 export const competencies: Competency[] = [
   {
     icon: "servant",
-    category: "Servant Leadership & Coaching",
+    category: "Team Leadership & Coaching",
     description:
-      "Lead as a servant-leader: I've coached five-member leadership teams in a delivery-orchestration capacity, clearing blockers so people can do their best work.",
+      "Lead by clearing the path: I've coached five-member leadership teams in a delivery-orchestration capacity, clearing blockers so people can do their best work.",
     accent: "emerald",
   },
   {

@@ -26,7 +26,7 @@ export default function About() {
             The Same Job, Different Vocabulary
           </h2>
           <p style={{ marginBottom: "20px", fontSize: "1.05rem" }}>
-            For a decade I&apos;ve led as a servant-leader under other titles — authoring
+            For a decade I&apos;ve led teams under other titles — authoring
             processes and <strong>Definition-of-Done</strong> standards, building metrics
             systems, refining backlogs of work against value, removing impediments, and running
             regular improvement cycles. Scrum simply gives that instinct a shared framework and a
@@ -43,7 +43,7 @@ export default function About() {
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           <div className="glass-panel" style={{ padding: "24px" }}>
             <h3 style={{ fontSize: "1.2rem", color: "#fff", marginBottom: "8px", display: "flex", alignItems: "center", gap: "10px" }}>
-              <CheckCircle size={18} color="var(--accent-emerald)" /> Servant Leadership
+              <CheckCircle size={18} color="var(--accent-emerald)" /> Team Leadership
             </h3>
             <p style={{ fontSize: "0.95rem" }}>
               I lead by clearing the path — coaching teams, removing blockers, and keeping people
