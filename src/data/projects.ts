@@ -27,6 +27,7 @@ export const projects: Project[] = [
     architecture:
       "A single FastAPI service serves both the JSON/SSE API and a Next.js front end. A Geometric Brownian Motion simulator (or the Polygon API) streams prices to the browser over Server-Sent Events, with state in SQLite. The AI layer uses LiteLLM with Pydantic-typed structured outputs, and any trade it proposes runs through the same server-side validation as a manual one — the model proposes, the code enforces. Containerized with Docker.",
     tags: ["Python", "FastAPI", "SSE", "SQLite", "Next.js", "LiteLLM", "Structured Outputs", "Docker"],
+    image: "/screenshots/finally.png",
   },
   {
     title: "Mise — AI Staff Scheduling",
