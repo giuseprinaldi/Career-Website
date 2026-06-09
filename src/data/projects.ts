@@ -76,7 +76,12 @@ export const projects: Project[] = [
     architecture:
       "Expo SDK 54 / React Native 0.81 with expo-router, shipping native Android and a static web build via react-native-web. State is React Context; Firebase provides email/password auth and Firestore, with data namespaced per family (families/{uid}/…) and enforced by Firestore security rules. Star balances update in real time via Firestore snapshot listeners, and persistence is platform-aware (IndexedDB on web, AsyncStorage on native).",
     tags: ["Expo", "React Native", "expo-router", "Firebase", "Firestore", "react-native-web", "PWA"],
-    image: "/screenshots/leo-list.png",
+    images: [
+      { src: "/screenshots/leo-list-tasks.png", label: "Tasks" },
+      { src: "/screenshots/leo-list-rewards.png", label: "Rewards" },
+      { src: "/screenshots/leo-list-math.png", label: "Math Game" },
+      { src: "/screenshots/leo-list.png", label: "Login" },
+    ],
     liveUrl: "https://leo-list.web.app",
   },
   {
