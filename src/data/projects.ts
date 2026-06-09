@@ -10,7 +10,8 @@ export interface Project {
   problem: string; // problem it solves
   architecture: string; // how it works
   tags: string[];
-  image?: string; // screenshot path under /public
+  image?: string; // single screenshot path under /public
+  images?: { src: string; label: string }[]; // multiple screenshots -> rendered as a gallery
   liveUrl?: string; // public demo
   repoUrl?: string; // only when the repo is public
 }
@@ -54,7 +55,11 @@ export const projects: Project[] = [
     architecture:
       "A single Next.js 16 app (App Router, React 19, Server Actions) with no separate API — mutations flow through a service layer the AI tools reuse, so business logic lives once. Data is in Neon Postgres via Drizzle ORM; auth is Auth.js (NextAuth v5) with Google, requesting Calendar scope so sign-in also authorizes sync (refresh tokens encrypted at rest). A Vercel Cron job runs incremental two-way calendar sync every 15 minutes, and the meal planner is a tool-calling agent on the Vercel AI SDK (DeepSeek).",
     tags: ["Next.js 16", "Server Actions", "Drizzle ORM", "Neon Postgres", "Auth.js", "Google Calendar API", "Vercel AI SDK"],
-    image: "/screenshots/family-hub.png",
+    images: [
+      { src: "/screenshots/family-hub.png", label: "Dashboard" },
+      { src: "/screenshots/family-hub-meals.png", label: "Chef Agent" },
+      { src: "/screenshots/family-hub-tasks.png", label: "Tasks" },
+    ],
   },
   {
     title: "Leo List — Kids' Chore & Reward App",
