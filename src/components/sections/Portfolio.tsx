@@ -1,5 +1,6 @@
 import { ExternalLink, Github, Lock } from "lucide-react";
 import { projects, type Project } from "@/data/projects";
+import Gallery from "@/components/Gallery/Gallery";
 
 function Field({ label, text }: { label: string; text: string }) {
   return (
@@ -28,6 +29,14 @@ function Media({ project }: { project: Project }) {
     alignItems: "center",
     justifyContent: "center",
   };
+
+  if (project.images?.length) {
+    return (
+      <div style={{ ...mediaBase, background: "#05070a", padding: "20px" }}>
+        <Gallery images={project.images} />
+      </div>
+    );
+  }
 
   if (project.image) {
     return (
