@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Joe Rinaldi — Scrum Master Portfolio
 
-## Getting Started
+A personal portfolio site presenting Joe Rinaldi's transition from operations leadership into
+Agile delivery / Scrum Master work. Built with **Next.js 16 (App Router)**, **React 19**, and
+**TypeScript**, with a retro arcade-gate intro and a DeepSeek-powered "Digital Twin" AI chat.
 
-First, run the development server:
+## Highlights
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Role Fit** section mapping the Scrum Master job description 1:1 to real experience.
+- **Arcade gate** intro — drag the coin into the slot **or press the spacebar** to enter
+  (keyboard-accessible; respects `prefers-reduced-motion`).
+- **Digital Twin chat** — `/api/chat` proxies to DeepSeek with a first-person persona;
+  validated, origin-locked, and capped.
+- **Working contact form** via Web3Forms (no backend secret required).
+
+## Stack
+
+Next.js 16 · React 19 · TypeScript 5 · lucide-react · DeepSeek API · Web3Forms · Vercel.
+
+## Project structure
+
+```
+src/
+  app/
+    page.tsx             # server component; composes the sections inside <SiteShell>
+    layout.tsx           # header / nav / footer / metadata
+    globals.css          # design tokens, utilities, animations (+ reduced-motion guard)
+    api/chat/route.ts    # DeepSeek proxy (validation + origin allow-list)
+  components/
+    SiteShell.tsx        # client: gate state + content fade + chat
+    ArcadeGate/          # client island: coin gate, drag + spacebar, audio synth
+    DigitalTwinChat/     # client island: AI chat widget
+    ContactForm/         # client island: Web3Forms submit
+    sections/            # Hero, About, RoleFit, Journey, Skills, Portfolio, Contact
+  data/                  # experiences, competencies, roleFit, projects, chat, site
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+cp .env.example .env.local   # then fill in the keys
+npm run dev                  # http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Environment variables
 
-## Learn More
+| Variable | Required | Notes |
+|---|---|---|
+| `DEEPSEEK_API_KEY` | yes (for chat) | Server-side only. Powers `/api/chat`. |
+| `NEXT_PUBLIC_WEB3FORMS_KEY` | yes (for contact form) | Public by design; from web3forms.com. |
+| `NEXT_PUBLIC_SITE_URL` | recommended in prod | Your production origin, for the chat origin allow-list. |
 
-To learn more about Next.js, take a look at the following resources:
+## Build & deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build && npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploys to **Vercel**: import the repo, set the three env vars in the Vercel project settings,
+and deploy. Set `NEXT_PUBLIC_SITE_URL` to the production URL once known.
 
-## Deploy on Vercel
+## To finish
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Export the résumé to `public/Joe_Rinaldi_Resume_ScrumMaster.pdf` (the "Download résumé" button links here).
+- Fill the placeholder cards in `src/data/projects.ts` with real project links / certification details.
