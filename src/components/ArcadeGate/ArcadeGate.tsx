@@ -176,10 +176,10 @@ export default function ArcadeGate({ onEnter }: { onEnter: () => void }) {
         {/* Header Title */}
         <div style={{ textAlign: "center" }}>
           <span className="edgy-badge" style={{ marginBottom: "10px", border: "1px solid rgba(6,182,212,0.4)", color: "var(--accent-cyan)", background: "rgba(6,182,212,0.08)" }}>
-            JR // SCRUM MASTER // SYSTEM BOOT
+            JR // TEAM LEADER // SYSTEM BOOT
           </span>
           <h1 style={{ fontSize: "2.3rem", fontWeight: "800", color: "#fff", letterSpacing: "-0.01em", textShadow: "0 0 30px rgba(255,255,255,0.05)" }}>
-            ENTER THE CORE
+            SELECT PLAYER: JR
           </h1>
           <p style={{ fontSize: "0.85rem", color: "var(--fg-subtle)", fontFamily: "var(--font-mono)", marginTop: "4px" }}>
             INSERT THE COIN — OR JUST TAP ENTER
@@ -237,10 +237,10 @@ export default function ArcadeGate({ onEnter }: { onEnter: () => void }) {
                 className="glow-text"
                 style={{ fontFamily: "var(--font-mono)", fontWeight: "900", letterSpacing: "0.22em", color: "var(--accent-emerald)", fontSize: "0.95rem", textShadow: "0 0 8px rgba(16, 185, 129, 0.8)" }}
               >
-                RINALDI // AGILE
+                RINALDI // LEADER
               </span>
               <span style={{ fontSize: "0.55rem", color: "var(--accent-cyan)", fontFamily: "var(--font-mono)", opacity: 0.8, letterSpacing: "0.1em" }}>
-                MODEL 01 // TEAM LEADER
+                MODEL 01 // GETTING STUFF DONE
               </span>
             </div>
 
