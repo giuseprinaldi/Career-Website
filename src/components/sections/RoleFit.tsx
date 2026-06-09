@@ -14,12 +14,12 @@ export default function RoleFit() {
             fontWeight: "600",
           }}
         >
-          // 02. ROLE FIT
+          // 03. ROLE FIT
         </span>
         <h2 style={{ fontSize: "2.5rem", color: "#fff", marginTop: "8px" }}>Mapped to the Role</h2>
         <p style={{ color: "var(--fg-subtle)", marginTop: "10px", fontSize: "1rem", maxWidth: "640px", margin: "10px auto 0" }}>
-          Every responsibility in the Scrum Master role description, matched to where I&apos;ve
-          already done the work.
+          The core work of a Scrum Master — and where I&apos;ve already done it under a different
+          title.
         </p>
       </div>
 

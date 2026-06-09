@@ -14,7 +14,7 @@ export default function Journey() {
             fontWeight: "600",
           }}
         >
-          // 03. CAREER HISTORY
+          // 04. CAREER HISTORY
         </span>
         <h2 style={{ fontSize: "2.5rem", color: "#fff", marginTop: "8px" }}>The Delivery Journey</h2>
       </div>
