@@ -54,6 +54,7 @@ export const projects: Project[] = [
     architecture:
       "A single Next.js 16 app (App Router, React 19, Server Actions) with no separate API — mutations flow through a service layer the AI tools reuse, so business logic lives once. Data is in Neon Postgres via Drizzle ORM; auth is Auth.js (NextAuth v5) with Google, requesting Calendar scope so sign-in also authorizes sync (refresh tokens encrypted at rest). A Vercel Cron job runs incremental two-way calendar sync every 15 minutes, and the meal planner is a tool-calling agent on the Vercel AI SDK (DeepSeek).",
     tags: ["Next.js 16", "Server Actions", "Drizzle ORM", "Neon Postgres", "Auth.js", "Google Calendar API", "Vercel AI SDK"],
+    image: "/screenshots/family-hub.png",
   },
   {
     title: "Leo List — Kids' Chore & Reward App",
