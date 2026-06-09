@@ -24,14 +24,14 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Joe Rinaldi | Operations → Agile Delivery",
   description:
-    "Joe Rinaldi — operations and team leader transitioning into Agile delivery. A decade of servant leadership, facilitation, impediment removal, and metrics-driven continuous improvement, now applied to a Scrum Master role and SAFe® SSM certification.",
+    "Joe Rinaldi — operations and team leader transitioning into Agile delivery. A decade of team leadership, facilitation, impediment removal, and metrics-driven continuous improvement, now applied to a Scrum Master role and SAFe® SSM certification.",
   keywords: [
     "Joe Rinaldi",
     "Joseph Rinaldi",
     "Scrum Master",
     "Agile delivery",
     "SAFe",
-    "servant leadership",
+    "team leadership",
     "Agile coach",
     "continuous improvement",
   ],

@@ -54,9 +54,4 @@ export const roleFit: RoleFitItem[] = [
     evidence:
       "Documentation-first operator: I authored the process libraries, standards, and metrics that made adherence repeatable and auditable.",
   },
-  {
-    responsibility: "Get formally certified (SAFe SSM / PSM).",
-    evidence:
-      "Already in motion — actively pursuing Scrum Master fundamentals ahead of SSM/PSM certification, alongside ongoing hands-on software study.",
-  },
 ];

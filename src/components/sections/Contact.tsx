@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Phone } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 import { SITE } from "@/data/site";
 import ContactForm from "@/components/ContactForm/ContactForm";
 
@@ -32,7 +32,7 @@ export default function Contact() {
           </h2>
           <p style={{ fontSize: "1.05rem", marginBottom: "32px" }}>
             Hiring for a Scrum Master or Agile delivery role — or want to compare notes on
-            servant leadership and team flow? Reach out directly or send a message and I&apos;ll
+            team leadership and delivery flow? Reach out directly or send a message and I&apos;ll
             reply quickly.
           </p>
 
@@ -48,20 +48,6 @@ export default function Contact() {
               <div>
                 <h4 style={{ fontSize: "0.85rem", color: "var(--fg-subtle)", textTransform: "uppercase", fontFamily: "var(--font-mono)" }}>Email</h4>
                 <p style={{ fontSize: "1rem", color: "#fff", fontWeight: "500" }}>{SITE.email}</p>
-              </div>
-            </a>
-
-            <a
-              href={SITE.phoneHref}
-              className="glass-panel"
-              style={{ padding: "16px 20px", display: "flex", alignItems: "center", gap: "16px" }}
-            >
-              <div style={{ color: "var(--accent-emerald)" }}>
-                <Phone size={22} />
-              </div>
-              <div>
-                <h4 style={{ fontSize: "0.85rem", color: "var(--fg-subtle)", textTransform: "uppercase", fontFamily: "var(--font-mono)" }}>Phone</h4>
-                <p style={{ fontSize: "1rem", color: "#fff", fontWeight: "500" }}>{SITE.phone}</p>
               </div>
             </a>
 

@@ -240,7 +240,7 @@ export default function ArcadeGate({ onEnter }: { onEnter: () => void }) {
                 RINALDI // AGILE
               </span>
               <span style={{ fontSize: "0.55rem", color: "var(--accent-cyan)", fontFamily: "var(--font-mono)", opacity: 0.8, letterSpacing: "0.1em" }}>
-                MODEL 01 // SERVANT-LEADER
+                MODEL 01 // TEAM LEADER
               </span>
             </div>
 
