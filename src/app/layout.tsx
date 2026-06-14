@@ -21,10 +21,17 @@ const spaceMono = Space_Mono({
   display: "swap",
 });
 
+// Canonical host is the www subdomain — the apex joe-rinaldi.com 301-redirects to it.
+// metadataBase lets the generated opengraph-image and the canonical/og:url resolve to absolute URLs.
+const SITE_URL = "https://www.joe-rinaldi.com";
+const TITLE = "Joe Rinaldi | Operations → Agile Delivery";
+const DESCRIPTION =
+  "Joe Rinaldi — operations and team leader transitioning into Agile delivery. A decade of team leadership, facilitation, impediment removal, and metrics-driven continuous improvement, now applied to a Scrum Master role and SAFe® SSM certification.";
+
 export const metadata: Metadata = {
-  title: "Joe Rinaldi | Operations → Agile Delivery",
-  description:
-    "Joe Rinaldi — operations and team leader transitioning into Agile delivery. A decade of team leadership, facilitation, impediment removal, and metrics-driven continuous improvement, now applied to a Scrum Master role and SAFe® SSM certification.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
   keywords: [
     "Joe Rinaldi",
     "Joseph Rinaldi",
@@ -35,6 +42,22 @@ export const metadata: Metadata = {
     "Agile coach",
     "continuous improvement",
   ],
+  alternates: { canonical: "/" },
+  // og:image (+ alt/type/width/height) is supplied automatically by app/opengraph-image.tsx.
+  openGraph: {
+    type: "website",
+    siteName: "Joe Rinaldi",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
