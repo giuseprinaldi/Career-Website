@@ -42,3 +42,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# personal / non-project docs (creative writing — keep local, never commit)
+/novel_docs/
